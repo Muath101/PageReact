@@ -1,0 +1,31 @@
+.download-images {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+}
+
+.download-images img {
+  width: 100px; /* تقلص حجم الصورة إلى 100px عرض */
+  height: auto;
+  transition: 0.3s;
+  border: 2px solid transparent; /* حافة شفافة */
+  cursor: pointer; /* يشير إلى اليد عند تمرير الفأرة */
+}
+
+.download-images img:hover {
+  transform: scale(1.1);
+  border-color: #4a90e2; /* لون الحافة عند التمرير */
+}
+
+.download-images img:active {
+  transform: scale(1); /* لإلغاء تأثير التوسع */
+  /* هنا تضيف الرابط حسب الصورة (Google Play وApp Store) */
+}
+
+.download-images img[alt="App Store"]:active {
+  window.location.href = "https://apps.apple.com/"; /* تغيير الرابط حسب الصفحات المستهدفة */
+}
+
+.download-images img[alt="Google Play"]:active {
+  window.location.href = "https://play.google.com/"; /* تغيير الرابط حسب الصفحات المستهدفة */
+}

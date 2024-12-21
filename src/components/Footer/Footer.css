@@ -1,0 +1,23 @@
+footer {
+    padding: 2rem var(--bgColor6);
+    background-color: var(--bgColor2);
+}
+
+footer .cont-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .cont-footer p {
+    color: var(--bgColor6);
+    text-align: center;
+    width: 500px;
+    margin-top: 1rem;
+}
+
+footer .cont-footer .end {
+    color: #ffa427;
+    margin-top: 1rem;
+}

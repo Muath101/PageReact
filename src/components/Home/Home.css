@@ -1,0 +1,212 @@
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgColor1);
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    position: fixed; /* يجعل الشريط ثابتًا في أعلى الصفحة */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bgColor1); /* اللون الخلفي للشريط */
+    padding: 1rem var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* التأكد من بقاء الشريط فوق العناصر الأخرى */
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+}
+
+nav ul li a {
+    color: var(--lightColor);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.4s;
+}
+
+nav ul li a:hover {
+    color: var(--bgColor3);
+}
+
+.yt {
+    background-color: var(--bgColor5);
+    color: var(--lightColor);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.81rem 1.87rem;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    transition: 0.4s;
+}
+
+.yt:hover {
+    background-color: transparent;
+    border: 2px solid var(--bgColor5);
+}
+
+.content {
+    flex-grow: 1;
+    padding: 0 var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-text {
+    position: relative;
+    bottom: 70px;
+}
+
+.sociol img {
+    margin-right: 2rem;
+    width: 2.5rem;
+    transition: 0.4s;
+}
+
+.sociol img:hover {
+    transform: scale(1.2);
+}
+
+.home .cont-imags {
+    width: 45%;
+    height: 90%;
+    position: relative;
+    align-self: flex-end;
+}
+
+.home .cont-imags img {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* نافذة الاشتراك */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* خلفية شفافة */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000; /* فوق شريط التنقل */
+}
+
+.modal-box {
+    background-color: var(--bgColor1); /* لون خلفية النافذة */
+    color: var(--lightColor);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-box h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.modal-box p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.plan-details {
+    background-color: var(--bgColor5); /* لون مختلف للخطة */
+    color: var(--bgColor1);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.plan-details h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.plan-details p {
+    font-size: 1rem;
+    color: var(--lightColor);
+}
+
+.plan-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.plan-details ul li {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.close-btn {
+    background-color: var(--bgColor3);
+    color: var(--bgColor1);
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.close-btn:hover {
+    background-color: var(--bgColor5);
+}
+
+/* في ملف Home.css */
+.nav-link {
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-link:hover {
+    background-color: (black); /* تغيير لون الخلفية عند المرور بالماوس */
+  }
+  
+  .sociol div {
+    display: inline-block;
+    cursor: pointer; /* إضافة مؤشر اليد عند التمرير */
+    margin: 0 10px; /* مسافة بين الأيقونات */
+    transition: transform 0.2s; /* تأثير عند التمرير */
+  }
+  
+  .sociol div img {
+    width: 50px; /* حجم الأيقونة */
+    height: 50px;
+    border-radius: 50%; /* لجعل الأيقونة دائرية */
+  }
+  
+  .sociol div:hover {
+    transform: scale(1.1); /* تكبير بسيط عند التمرير */
+  }
+  
+  .navbar {
+    position: fixed;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .navbar.transparent {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar.hovered {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
